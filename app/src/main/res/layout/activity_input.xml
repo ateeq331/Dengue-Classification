@@ -20,180 +20,197 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#F5F7FA"
         android:fillViewport="true"
-        android:background="#F5F7FA">
+        android:layout_marginBottom="30dp">
 
-        <LinearLayout
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Age -->
+        <EditText
+            android:id="@+id/input_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal">
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="10dp" />
 
-            <!-- Age -->
-            <EditText
-                android:id="@+id/input_age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Age"
-                android:inputType="number"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp" />
+        <!-- Gender -->
+        <Spinner
+            android:id="@+id/input_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:entries="@array/gender_options"
+            android:padding="10dp" />
 
-            <!-- Gender -->
-            <Spinner
-                android:id="@+id/input_gender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp"
-                android:entries="@array/gender_options" />
+        <!-- NS1 -->
+        <Spinner
+            android:id="@+id/input_ns1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:entries="@array/positive_negative_options"
+            android:padding="10dp" />
 
-            <!-- NS1 -->
-            <Spinner
-                android:id="@+id/input_ns1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp"
-                android:entries="@array/positive_negative_options" />
+        <!-- IGG -->
+        <Spinner
+            android:id="@+id/input_igg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:entries="@array/positive_negative_options"
+            android:padding="10dp" />
 
-            <!-- IGG -->
-            <Spinner
-                android:id="@+id/input_igg"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp"
-                android:entries="@array/positive_negative_options" />
+        <!-- IGM -->
+        <Spinner
+            android:id="@+id/input_igm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:entries="@array/positive_negative_options"
+            android:padding="10dp" />
 
-            <!-- IGM -->
-            <Spinner
-                android:id="@+id/input_igm"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp"
-                android:entries="@array/positive_negative_options" />
+        <!-- Wbc First Reading -->
+        <EditText
+            android:id="@+id/input_wbc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Wbc First Reading"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
 
-            <!-- Wbc First Reading -->
-            <EditText
-                android:id="@+id/input_wbc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Wbc First Reading"
-                android:inputType="numberDecimal"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp" />
+        <!-- Hct First Reading -->
+        <EditText
+            android:id="@+id/input_hct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Hct First Reading"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
 
-            <!-- Hct First Reading -->
-            <EditText
-                android:id="@+id/input_hct"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Hct First Reading"
-                android:inputType="numberDecimal"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp" />
+        <!-- Platelets First Reading -->
+        <EditText
+            android:id="@+id/input_platelets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Platelets First Reading"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
 
-            <!-- Platelets First Reading -->
-            <EditText
-                android:id="@+id/input_platelets"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Platelets First Reading"
-                android:inputType="numberDecimal"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp" />
+        <!-- Patient Condition -->
+        <Spinner
+            android:id="@+id/input_patient_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:entries="@array/patient_condition_options"
+            android:padding="10dp" />
+
+        <!-- Patient Outcome -->
+        <Spinner
+            android:id="@+id/input_patient_outcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:entries="@array/patient_outcome_options"
+            android:padding="10dp" />
+
+        <!-- Temperature -->
+        <EditText
+            android:id="@+id/input_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Temperature (°C)"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <!-- Humidity -->
+        <EditText
+            android:id="@+id/input_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Humidity (%)"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <!-- Wind Speed -->
+        <EditText
+            android:id="@+id/input_wind_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Wind Speed (km/h)"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#0F4C81"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
 
-            <!-- Patient Condition -->
-            <Spinner
-                android:id="@+id/input_patient_condition"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp"
-                android:entries="@array/patient_condition_options" />
-
-            <!-- Patient Outcome -->
-            <Spinner
-                android:id="@+id/input_patient_outcome"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp"
-                android:entries="@array/patient_outcome_options" />
-
-            <!-- Temperature -->
-            <EditText
-                android:id="@+id/input_temperature"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Temperature (°C)"
-                android:inputType="numberDecimal"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp" />
-
-            <!-- Humidity -->
-            <EditText
-                android:id="@+id/input_humidity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Humidity (%)"
-                android:inputType="numberDecimal"
-                android:layout_margin="16dp"
-                android:padding="10dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp" />
-
-            <!-- Wind Speed -->
-            <EditText
-                android:id="@+id/input_wind_speed"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Wind Speed (km/h)"
-                android:inputType="numberDecimal"
-                android:padding="10dp"
-                android:layout_margin="16dp"
-                android:background="@drawable/rounded_edit_text"
-                android:layout_marginBottom="16dp" />
+        <!-- Result TextView -->
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="200dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Results will be shown here"
+            android:textColor="#0F4C81"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 
 
-            <!-- Submit Button -->
-            <Button
-                android:id="@+id/btn_submit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#0F4C81"
-                android:textSize="16sp"
-                android:textAllCaps="false"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp" />
-
-        </LinearLayout>
+    </LinearLayout>
     </ScrollView>
 </LinearLayout>
