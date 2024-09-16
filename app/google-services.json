@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "734347740613",
+    "project_id": "dengue-classification",
+    "storage_bucket": "dengue-classification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734347740613:android:aa1a7cc85a2da5e4ed37ac",
+        "android_client_info": {
+          "package_name": "ateeq.dengueclassification.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDov9DdiowlisYUCMVDqrjJ-ikGqRqk-dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

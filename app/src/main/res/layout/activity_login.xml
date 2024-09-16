@@ -20,8 +20,9 @@
         android:layout_marginTop="50dp"
         android:text="@string/app_name"
         android:textAlignment="center"
+        android:fontFamily="@font/bilbo_swash_caps"
         android:textColor="#0F4C81"
-        android:textSize="40sp"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
 
@@ -103,7 +104,7 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="8dp"
                 android:text="Forgot Password?"
-                android:textColor="#ffff" />
+                android:textColor="#0F4C81" />
 
             <Button
                 android:id="@+id/signInButton"

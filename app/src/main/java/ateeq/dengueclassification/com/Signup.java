@@ -1,5 +1,6 @@
 package ateeq.dengueclassification.com;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -50,7 +51,7 @@ public class Signup extends AppCompatActivity {
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         imageViewShowPassword = findViewById(R.id.imageViewShowPassword);
-        Button button = findViewById(R.id.signUpButton);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button button = findViewById(R.id.signUpButton);
 
         imageViewShowPassword.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,7 +71,7 @@ public class Signup extends AppCompatActivity {
         });
 
 
-        TextView loginTextView = findViewById(R.id.loginTextView);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView loginTextView = findViewById(R.id.loginTextView);
         String loginText = "Already have an account? Log in";
 
         SpannableString spannableString = new SpannableString(loginText);

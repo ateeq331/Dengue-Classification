@@ -1,7 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">Dengue TwinGuard</string>
-    <string name="navigation_drawer_close" />
     <string name="navigation_drawer_open">aA</string>
 
     <string-array name="gender_options">
@@ -24,9 +22,4 @@
         <item>Death</item>
     </string-array>
 
-
 </resources>
-
-
-
-

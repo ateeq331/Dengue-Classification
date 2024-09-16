@@ -14,16 +14,34 @@
         android:id="@+id/forgot">
 
 
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:background="#0F4C81"
-            android:layout_marginTop="30dp"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+            android:theme="@style/Widget.AppCompat.DrawerArrowToggle">
 
+            <!-- Use a RelativeLayout to position elements inside the Toolbar -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
+                <!-- App Name in the center of the Toolbar -->
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/bilbo_swash_caps"
+                    android:text="@string/app_name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -36,7 +54,26 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#006088">
+                android:background="#F5F7FA">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="The Dengue TwinGuard app is designed to classify between two types of dengue fever, helping users quickly assess potential cases based on clinical features and environmental factors. This app leverages machine learning models to provide an accurate classification, offering insights into both the severity and the type of dengue infection."
+                    android:textAlignment="center"
+                    android:textColor="#0F4C81"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
 
 
@@ -45,16 +82,16 @@
 
         <Button
             android:id="@+id/btnstart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lets Start"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:textColor="#FFFFFF"
+            android:layout_margin="108dp"
             android:backgroundTint="#0F4C81"
             android:foregroundTint="@color/white"
-            android:layout_margin="108dp"
+            android:text="Lets Start"
             android:textAllCaps="false"
-            android:textSize="16sp"  />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
 
     </LinearLayout>

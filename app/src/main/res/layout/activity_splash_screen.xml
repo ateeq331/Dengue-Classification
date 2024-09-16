@@ -5,23 +5,39 @@
     android:background="#ffff"
     android:gravity="center">
 
-    <ImageView
-        android:id="@+id/logoImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"
-    android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="238dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/appName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dengue TwinGuard"
-        android:textColor="#0F4C81"
-        android:textSize="30sp"
-        android:layout_below="@id/logoImage"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:text="Dengue TwinGuard"
+            android:textColor="#0F4C81"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bilbo_swash_caps"
+            android:text="AtUs Innovations"
+            android:textColor="#0F4C81"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </RelativeLayout>
